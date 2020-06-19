@@ -1,0 +1,28 @@
+mixin advantage(icon, title, text)
+  .advantage
+    .advantage__icon
+      case icon
+        when 'clock'
+          include ../svg/clock.svg
+        when 'check'
+          include ../svg/check.svg
+        when 'award'
+          include ../svg/award.svg
+    .advantage__col
+      h3.advantage__title=title
+      p.advantage__text=text
+
+section.advantages(id='advantages')
+  h2.title.advantages__title Преимущества
+  .advantages__left
+    img.advantages__img(src="./img/car.png", alt="car")
+  .advantages__right
+    +advantage('clock',
+            'Lorem Ipsum', 
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid- idunt ut labore et dolore magna aliqua. Quis')
+    +advantage('check',
+            'Lorem Ipsum', 
+            'Lorem ipsum dolor sit amet, consectetur adipisc')
+    +advantage('award',
+            'Lorem Ipsum', 
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi- ')

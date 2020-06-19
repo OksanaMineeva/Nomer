@@ -1,0 +1,62 @@
+.btn
+  background-color: #fff
+  font-family: 'Fira Sans'
+  font-weight: 800
+  font-size: 20px
+  border: none
+  cursor: pointer
+  outline: none
+  &_primary
+    color: $color-light
+    background-color: $color-accent
+    box-shadow: 0 18px 25px 3px rgba(255, 33, 59, 0.25)
+    font-size: 24px
+    display: block
+  &_secondary
+    padding: 15px 94px 16px 88px
+    border-radius: 31px
+    border: 2px solid #ff213b
+  &_up
+    background-color: transparent
+    font-familt: 'Fira Sans'
+    font-weight: 400
+    color: $color-light
+    font-size: 24px
+    background-image: url(../img/arrow-up.png)
+    background-repeat: no-repeat
+    background-position: top right
+    padding-right: 35px
+    @media screen and (max-width: 586px)
+      padding-right: 25px
+  &_close
+    width: 21px
+    height: 21px
+    position: absolute
+    right: 48px
+    top: 64px
+    &::before, &::after
+      content: ''
+      width: 1px
+      height: 29px
+      background-color: $color
+      position: absolute
+      top: -5px
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+    @media screen and (max-width: 586px)
+      right: 20px
+      top: 30px
+
+
+@media screen and (max-width: 768px)
+  .btn
+    &_secondary
+      padding: 15px 54px 16px 48px
+
+@media screen and (max-width: 576px)
+  .btn
+    font-size: 18px
+    &_secondary
+      padding: 10px 44px 11px 38px

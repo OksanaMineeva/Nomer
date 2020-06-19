@@ -1,0 +1,48 @@
+.popup
+  $this: &
+  background-color: rgba(23, 44, 66, 0.6) 
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  display: none
+  &__inner
+    background-color: $color-light
+    padding: 57px 80px 51px 74px
+    flex-basis: 674px
+    position: relative
+    box-shadow: 0 0 49px 2px rgba(0, 0, 0, 0.1)
+    color: #161616
+    @media screen and (max-width: 586px)
+      padding: 40px 30px
+  &__title
+    text-align: center
+    font-family: "Montserrat"
+    font-weight: 800
+    font-size: 33px
+    letter-spacing: -1.1px
+    margin-top: 0
+    margin-bottom: 41px
+  &__info
+    text-align: center
+    font-family: "MullerLight"
+    font-size: 22px
+    letter-spacing: 0.3px
+    margin-bottom: 55px
+  &_success
+    #{$this}__inner
+      padding: 295px 80px 37px 74px
+      background: url(../img/ok.png) center top 106px no-repeat, url(../img/congratulate.png) no-repeat, $color-light 
+    #{$this}__title
+      font-family: 'Fira Sans'
+      font-weight: 800
+      font-size: 41px
+      margin-bottom: 22px
+      
+

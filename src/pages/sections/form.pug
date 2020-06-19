@@ -1,0 +1,11 @@
+form.form(action="./form.php", method="post", class=popup ? 'form_popup' : '')
+  .form__field
+    label.form__label(for="name") Ваше имя
+    input.form__input(name='name' type="text", placeholder="Имя")
+  .form__field
+    label.form__label(for="tel") Телефон
+    input.form__input(name='tel' type="tel", placeholder="Телефон")
+  .form__field
+    label.form__label(for="numbers") Ваши номера
+    input.form__input(name='numbers' type="text", placeholder="Ваши номера")
+  button.btn.btn_primary.form__btn Заказать

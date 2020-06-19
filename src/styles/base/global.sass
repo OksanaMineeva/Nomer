@@ -1,0 +1,45 @@
+\:root 
+  font-size: calc(1vw - 0.5em)
+
+$color: #000000
+$color-light: #ffffff
+$color-accent: #ff213b
+$main-color: #7A7A7A
+$secondary-color: #999999
+$font: 'MullerLight'
+
+*,
+*::before,
+*::after 
+  box-sizing: inherit
+
+
+html 
+  box-sizing: border-box
+
+
+body, h1
+  margin: 0
+  padding: 0
+  color: $color
+  font-family: $font
+  font-size: 16px
+
+.container
+  width: 100%
+  max-width: 1445px
+  margin: 0 auto
+  padding: 0 20px
+  @media screen and (max-width: 768px)
+    padding: 0 10px
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+img 
+  max-width: 100%
+
+a
+  text-decoration: none

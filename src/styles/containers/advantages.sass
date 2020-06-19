@@ -1,0 +1,43 @@
+.advantages
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  max-width: 1232px
+  margin: 0 auto 80px
+  @media screen and (max-width: 1340px)
+    padding-left: 30px
+    padding-right: 30px
+  @media screen and (max-width: 958px)
+    margin-bottom: 0
+  @media screen and (max-width: 586px)
+    padding-left: 10px
+    padding-right: 10px
+  &__title
+    flex: 0 1 100%
+    justify-content: center
+    margin-top: 0
+    margin-bottom: 58px
+    padding-right: 65px
+    @media screen and (max-width: 1340px)
+      padding-right: 0
+  &__right
+    flex: 0 1 37%
+    padding-left: 10px
+    @media screen and (max-width: 958px)
+      flex: 0 1 100%
+    @media screen and (max-width: 586px)
+      padding-left: 5px
+  &__left
+    padding-top: 18px
+    @media screen and (max-width: 1340px)
+      flex: 0 1 58%
+      align-self: center
+      padding-top: 0
+      padding-bottom: 40px
+    @media screen and (max-width: 958px)
+      flex: 0 1 100%
+  &__img
+    @media screen and (max-width: 958px)
+      display: block
+      margin: 0 auto
+      width: 60%

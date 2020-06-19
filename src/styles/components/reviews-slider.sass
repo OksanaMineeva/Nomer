@@ -1,0 +1,28 @@
+.reviews-slider
+  &__btn
+    position: absolute
+    width: 59px
+    height: 59px
+    box-shadow: 0 0 29px 2px rgba(23, 44, 66, 0.1)
+    top: 34.2%
+    background-color: $color-light
+    background-image: url(../img/arrow.png)
+    background-position: center
+    background-repeat: no-repeat
+    border-radius: 50%
+    outline: none
+    cursor: pointer
+    &:hover
+      background-color: #dcdcdc
+      background-image: url(../img/arrow.png)
+      background-position: center
+      background-repeat: no-repeat
+    &_prev
+      left: 0px
+      transform: rotate(180deg)
+    &_next
+      right: 0px
+    @media screen and (max-width: 958px)
+      width: 40px
+      height: 40px
+      background-size: 30%

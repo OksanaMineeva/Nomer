@@ -1,0 +1,73 @@
+.card
+  max-width: 448px
+  box-shadow: 0 0 56px 4px rgba(0, 0, 0, 0.07)
+  display: flex
+  flex-flow: column
+  @media screen and (max-width: 586px)
+    margin-bottom: 80px
+  & + &
+    margin-left: 49px
+    @media screen and (max-width: 958px)
+      margin-left: 20px
+    @media screen and (max-width: 586px)
+      margin-left: 0
+  &__title
+    background-color: #172c42
+    text-align: center
+    font-size: 30px
+    font-family: 'Fira Sans'
+    font-weight: 900
+    color: $color-light
+    margin-top: 0
+    padding: 20px 10px 26px
+    margin-bottom: 36px
+    @media screen and (max-width: 958px)
+      font-size: 26px
+      padding: 20px 7px 26px
+      margin-bottom: 25px
+  &__features
+    padding-left: 51px
+    @media screen and (max-width: 958px)
+      padding-left: 15px
+      padding-right: 15px
+  &__price
+    border-top: 1px solid #e2e2e2
+    margin-top: auto
+  &__btn
+    margin: 0 auto -32px
+    padding: 19px 111px 19px 112px
+    @media screen and (max-width: 958px)
+      padding: 19px 70px
+
+.features
+  min-height: 215px
+  &__item
+    display: flex
+    margin-bottom: 21px
+  &__icon
+    display: block
+    flex: 1 0 31px
+    padding-top: 7px
+    margin-right: 20px
+    svg
+      fill: $color-accent
+  &__text
+    display: block
+    flex: 1 1 100%
+    letter-spacing: 0.15px
+    line-height: 1.5
+
+.price
+  text-align: center
+  color: #172c42
+  font-size: 24px
+  padding-top: 22px
+  &__old
+    text-decoration: line-through
+    margin-bottom: 4px
+  &__new
+    margin-bottom: 14px
+  .accent
+    font-family: 'MullerBlack'
+    font-size: 50px
+    padding-right: 4px

@@ -1,0 +1,40 @@
+.form
+  $this: &
+  width: 400px
+  font-size: 16px
+  &__label
+    display: block
+    margin-bottom: 15px
+    font-family: 'Fira Sans'
+    font-weight: 800
+    font-size: 24px
+    color: $color-light
+  &__input
+    display: block
+    width: 100%
+    background: #FFFFFF
+    border: none
+    padding: 24px 28px 20px
+    margin-bottom: 29px
+    &::placeholder
+      font-size: 18px
+      color: $color
+  &__btn
+    margin-top: 58px
+    padding: 27px 122px 24px
+    &:hover
+      background: transparentize($color-accent, .2)
+    @media screen and (max-width: 1120px)
+      padding: 27px 100px 24px
+    @media screen and (max-width: 586px)
+      padding: 27px 80px 24px
+  &_popup
+    width: auto
+    #{$this}__label
+      display: none
+    #{$this}__input
+      border: 1px solid #d9d9d9
+      padding: 25px 31px 21px
+      margin-bottom: 18px
+    #{$this}__btn
+      margin: 49px auto 0

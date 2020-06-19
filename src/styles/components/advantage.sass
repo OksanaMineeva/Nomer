@@ -1,0 +1,39 @@
+.advantage
+  display: flex
+  margin-bottom: 70px
+  @media screen and (max-width: 1340px)
+    margin-bottom: 40px
+  &__icon
+    flex: 1 0 52px
+    margin-right: 25px
+    svg
+      width: 100%
+      fill: $color-accent
+    @media screen and (max-width: 586px)
+      flex: 1 0 42px
+      margin-right: 15px
+  &__col
+    flex: 0 1 100%
+  &__title
+    margin: 0
+    font-size: 30px
+    font-family: 'Fira Sans'
+    font-weight: 900
+    line-height: 1
+    letter-spacing: 0.3px
+    position: relative
+    padding-bottom: 21px
+    margin-bottom: 21px
+    &::after
+      content: ''
+      position: absolute
+      height: 10px
+      width: 98px
+      background-color: $color-accent
+      bottom: 0
+      left: 0
+    @media screen and (max-width: 1340px)
+      font-size: 26px
+      margin-bottom: 15px
+  &__text
+    line-height: 1.5

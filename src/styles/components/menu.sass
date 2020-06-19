@@ -1,0 +1,20 @@
+.menu
+  &__list
+    display: flex
+    @media screen and (max-width: 586px)
+      flex-wrap: wrap
+  &__btn
+    padding: 42px 19px 50px 20px
+    font-size: 20px
+    font-family: 'Fira Sans'
+    font-weight: 800
+    color: $color
+    display: block
+    &.is-active
+      background-color: $color-accent
+      color: $color-light
+    &:hover
+      background-color: transparentize($color-accent, .5)
+    @media screen and (max-width: 586px)
+      font-size: 18px
+      padding: 20px 15px

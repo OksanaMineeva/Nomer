@@ -1,0 +1,31 @@
+.cost
+  margin-bottom: 136px
+  @media screen and (max-width: 1120px)
+    padding-left: 20px
+    padding-right: 20px
+  @media screen and (max-width: 958px)
+    margin-bottom: 80px
+  &__title
+    margin-bottom: 55px
+    @media screen and (max-width: 958px)
+      margin-bottom: 40px
+  &__cards
+    display: flex
+    justify-content: center
+    margin-bottom: 79px
+    @media screen and (max-width: 586px)
+      flex-flow: column
+      align-items: center
+    @media screen and (max-width: 586px)
+      margin-bottom: 0
+  &__info
+    text-align: center
+    font-size: 18px
+    font-family: 'MullerMedium'
+    letter-spacing: 0.18px
+    padding-right: 10px
+    &::before
+      content: '* '
+      color: $color-accent
+  
+  

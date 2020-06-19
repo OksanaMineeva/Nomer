@@ -1,0 +1,83 @@
+.hero
+  background-position: center
+  background-repeat: no-repeat
+  background-image: url(../img/hero_bg.jpg)
+  @media screen and (max-width: 1460px)
+    background-image: none
+  .container
+    max-width: 1470px
+    @media screen and (max-width: 1460px)
+      padding: 0
+  &__inner
+    display: flex
+    margin-bottom: 147px
+    @media screen and (max-width: 958px)
+      flex-flow: column
+      margin-bottom: 80px
+  &__left
+    flex-basis: 65%
+    @media screen and (max-width: 1460px)
+      background-image: url(../img/car_bg_light.jpg)
+      background-position-x: -60px
+      background-size: cover
+  &__right
+    flex-basis: 35%
+    padding-top: 172px
+    padding-left: 105px
+    padding-bottom: 180px
+    @media screen and (max-width: 1600px)
+      background-image: url(../img/car_bg_dark.jpg)
+      padding-left: 50px
+      padding-right: 50px
+      .form
+        margin-left: auto
+        margin-right: auto
+    @media screen and (max-width: 1120px)
+      padding-left: 30px
+      padding-right: 30px
+      .form
+        width: 300px
+    @media screen and (max-width: 958px)
+      padding-top: 72px
+      padding-bottom: 80px
+      .form
+        max-width: 500px
+        width: 100%
+  &__content
+    max-width: 917px
+    margin-left: auto
+    padding-left: 20px
+    @media screen and (max-width: 1460px)
+      padding-right: 50px
+    @media screen and (max-width: 1120px)
+      padding-right: 30px
+    @media screen and (max-width: 958px)
+      margin-left: 0
+  &__menu
+    margin-bottom: 125px
+    @media screen and (max-width: 958px)
+      margin-bottom: 60px
+    @media screen and (max-width: 586px)
+      margin-bottom: 40px
+  &__title
+    max-width: 780px
+    font-family: 'Fira Sans'
+    font-weight: 900
+    font-size: 80px
+    line-height: 1.1
+    margin-left: -2px
+    margin-bottom: 55px
+    &.accent
+      color: $color-accent
+    @media screen and (max-width: 1600px)
+      font-size: 60px
+    @media screen and (max-width: 586px)
+      font-size: 40px
+      margin-bottom: 20px
+  &__subtitle
+    font-family: 'MullerRegular'
+    font-size: 24px
+    max-width: 780px
+    line-height: 1.2
+    @media screen and (max-width: 958px)
+      margin-bottom: 60px

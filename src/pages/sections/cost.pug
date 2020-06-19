@@ -1,0 +1,29 @@
+mixin card(title, features, oldPrice, newPrice)
+  .card
+    h3.card__title=title
+    .card__features
+      ul.features
+        each feature in features
+          li.features__item
+            span.features__icon
+              include ../svg/selected.svg
+            span.features__text=feature
+    .card__price.price
+      .price__old=oldPrice+' грн'
+      .price__new
+        span.accent=newPrice
+        span  грн
+    button.btn.btn_primary.card__btn.js-order Заказать
+
+section.cost(id='cost')
+  h2.title.cost__title Стоимость
+  .cost__cards
+    +card('Lorem Ipsum',
+            ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'Lorem ipsum dolor sit amet, consectetur'], 
+            '399',
+            '299')
+    +card('Lorem Ipsum',
+            ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'], 
+            '599',
+            '499')
+  .cost__info Lorem ipsum dolor sit amet,
